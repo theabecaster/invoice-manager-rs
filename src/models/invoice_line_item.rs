@@ -1,6 +1,6 @@
-#[derive(sqlx::FromRow, Debug)]
+#[derive(sqlx::FromRow, Debug, Clone)]
 
-pub struct LineItem {
+pub struct InvoiceLineItem {
     pub id: i32,
     pub invoice_id: i32,
     pub description: String,

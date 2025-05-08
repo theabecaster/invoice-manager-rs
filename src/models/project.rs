@@ -1,4 +1,4 @@
-#[derive(sqlx::FromRow, Debug)]
+#[derive(sqlx::FromRow, Debug, Clone)]
 pub struct Project {
     pub id: i32,
     pub client_id: i32,
